@@ -14,14 +14,16 @@ function destructivelyRemoveLastDriver() {
 function destructivelyRemoveFirstDriver() {
   drivers.shift();
 }
+//
+//
 //MY ISSUE, why do the following four require "return"??
-
 function appendDriver(name) {
-return [...drivers, name];
+  return [...drivers, name];
 }
-// function prependDriver() {
-// //const newNewDrivers = [ name, ...drivers ];
-// }
+
+function prependDriver() {
+  const newNewDrivers = [ name, ...drivers ];
+}
 
 function removeLastDriver() {
   return drivers.slice(0, drivers.length -1);

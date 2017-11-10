@@ -16,8 +16,8 @@ function destructivelyRemoveFirstDriver() {
 }
 //MY ISSUE, why do the following four require "return"??
 
-function appendDriver() {
-return [...drivers, name];
+function appendDriver(name) {
+r   eturn [...drivers, name];
 }
 // function prependDriver() {
 // //const newNewDrivers = [ name, ...drivers ];
